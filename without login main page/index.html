@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternConnect</title>
+    <!-- Linking Google fonts for icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-100">
+        <header class="bg-white shadow">
+            <nav class="container mx-auto px-6 py-3">
+                <div class="flex justify-between items-center">
+                    <div class="left">
+                        <a href='https://postimg.cc/hfyG19k7' target='_blank'><img src='https://i.postimg.cc/hfyG19k7/Screenshot-2024-11-10-181701-removebg-preview.png' border='0' alt='Screenshot-2024-11-10-181701-removebg-preview'/></a>
+                </div>
+                    <div class="space-x-4">
+                        <button class="btn-ghost" data-section="home">Home</button>
+                        <button class="btn-ghost" data-section="internships">Internships</button>
+                        <button class="btn-ghost" data-section="contact">Contact Us</button>
+                        <button class="btn-ghost" data-section="about">About</button>
+                        <button class="btn">Sign In</button>
+                        <button class="btn">Sign Up</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="animate-text">Launch Your Career With 
+                        <span class="gradient-text">Premium Internships</span>
+                    </h1>
+                    <p class="animate-text delay-1">
+                        Connect with top companies and start your professional journey with hands-on experience
+                    </p>
+                    <div class="hero-buttons animate-text delay-2">
+                        <button class="primary-btn">
+                            <span>Get Started</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                        <button class="secondary-btn">
+                            <span>Watch Demo</span>
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="hero-stats animate-text delay-3">
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Active Internships</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Partner Companies</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>95%</h3>
+                            <p>Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        
+                        <div class="floating-card card-1">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                            <span>Tech Internships</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                            <span>Marketing</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <ion-icon name="brush-outline"></ion-icon>
+                            <span>Design</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                            <span>Data Science</span>
+                        </div>
+                        <div class="floating-card card-5">
+                            <ion-icon name="camera-outline"></ion-icon>
+                            <span>Photography</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="container" id="internships">  
+            <section class="hero2 ">
+                    <h1>Find Your Perfect Internship</h1>
+                    <p>Start your journey with the best Internship opportunities and kick start your Career!</p>
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <div class="search-input-group">
+                            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+                            <input type="text" class="search-input" placeholder="Search internships...">
+                            <div class="search-tags">
+                                <span class="search-tag" data-category="design">
+                                    <ion-icon name="brush-outline"></ion-icon>
+                                    Design
+                                </span>
+                                <span class="search-tag" data-category="development">
+                                    <ion-icon name="code-slash-outline"></ion-icon>
+                                    Development
+                                </span>
+                                <span class="search-tag" data-category="marketing">
+                                    <ion-icon name="trending-up-outline"></ion-icon>
+                                    Marketing
+                                </span>
+                            </div>
+                        </div>
+                        <button class="search-btn">
+                            <span class="btn-text">Search</span>
+                            <div class="btn-icon">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="search-suggestions">
+                        <div class="suggestion-group">
+                            <h3>Popular Searches</h3>
+                            <div class="suggestion-items">
+                                <span class="suggestion-item">UI/UX Design</span>
+                                <span class="suggestion-item">Web Development</span>
+                                <span class="suggestion-item">Digital Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          <!-- hero 2 card slide setion -->
+              <div class="container swiper">
+                  <div class="card-wrapper">
+                    <!-- Card slides container -->
+                    <ul class="card-list swiper-wrapper">
+                      <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                          <img src="images/designer.jpg" alt="Card Image" class="card-image">
+                          <p class="badge badge-designer">Designer</p>
+                          <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                          <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                      </li>
+                      <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                          <img src="images/developer.jpg" alt="Card Image" class="card-image">
+                          <p class="badge badge-developer">Developer</p>
+                          <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                          <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                      </li>
+                      <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                          <img src="images/marketer.jpg" alt="Card Image" class="card-image">
+                          <p class="badge badge-marketer">Marketer</p>
+                          <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                          <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                      </li>
+                      <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                          <img src="images/gamer.jpg" alt="Card Image" class="card-image">
+                          <p class="badge badge-gamer">Gamer</p>
+                          <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                          <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                      </li>
+                      <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                          <img src="images/editor.jpg" alt="Card Image" class="card-image">
+                          <p class="badge badge-editor">Editor</p>
+                          <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                          <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                      </li>
+                    </ul>
+              
+                     <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+              
+                    <!-- Navigation Buttons -->
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                  </div>
+              </div>
+          </section>
+      </main>
+
+        <!-- feedback section -->
+        <section class="feedback-section">
+            <div class="section-heading">
+                <h1>What Our <span>Interns Say</span></h1>
+                <p>Join thousands of satisfied students who found their dream internships</p>
+            </div>
+
+            <div class="testimonial-container swiper">
+                <div class="testimonial-wrapper swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="images/testimonial1.jpg" alt="User 1">
+                            </div>
+                            <p class="testimonial-text">
+                                Thanks to CarreerKick, I landed my dream internship at Google. The platform made the application process seamless and straightforward!
+                            </p>
+                            <div class="testimonial-info">
+                                <h3>Sufi Farhan Murshed</h3>
+                                <p>Software Engineering Intern</p>
+                                <div class="stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="images/testimonial2.jpg" alt="User 2">
+                            </div>
+                            <p class="testimonial-text">
+                                The variety of opportunities available on CarreerKick is amazing. Found exactly what I was looking for in just a week!
+                            </p>
+                            <div class="testimonial-info">
+                                <h3>Nilanjan Nayak</h3>
+                                <p>Marketing Intern</p>
+                                <div class="stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="images/testimonial3.jpg" alt="User 3">
+                            </div>
+                            <p class="testimonial-text">
+                                The mentorship and guidance I received through CarreerKick's platform was invaluable for my career growth.
+                            </p>
+                            <div class="testimonial-info">
+                                <h3>Suman Rana</h3>
+                                <p>UI/UX Design Intern</p>
+                                <div class="stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <div class="section-heading">
+                    <h1>Contact <span>Us</span></h1>
+                    <p>Get in touch with our team for any queries</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <div class="info-content">
+                                <h3>Our Location</h3>
+                                <p>123 Tech Park, Silicon Valley, CA 94025</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            <div class="info-content">
+                                <h3>Phone Number</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <p>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email Address</h3>
+                                <p>info@careerkick.com</p>
+                                <p>support@careerkick.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm" class="form-grid">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" required>
+                                    <label for="name">Your Name</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" required>
+                                    <label for="email">Your Email</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <div class="input-wrapper">
+                                    <input type="text" id="subject" required>
+                                    <label for="subject">Subject</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <div class="input-wrapper">
+                                    <textarea id="message" required></textarea>
+                                    <label for="message">Your Message</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <ion-icon name="paper-plane-outline"></ion-icon>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+
+     <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- FEEDBACK SECTION -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <!-- About Header -->
+            <div class="section-heading">
+                <h1>About <span>Us</span></h1>
+                <p>Connecting Students with Opportunities</p>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-content">
+                <!-- Left Side - Stats -->
+                <div class="about-stats">
+                    <div class="stat-card" data-target="5000">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <h3><span class="counter">0</span>+</h3>
+                        <p>Students Placed</p>
+                    </div>
+                    <div class="stat-card" data-target="1000">
+                        <ion-icon name="business-outline"></ion-icon>
+                        <h3><span class="counter">0</span>+</h3>
+                        <p>Partner Companies</p>
+                    </div>
+                    <div class="stat-card" data-target="95">
+                        <ion-icon name="trophy-outline"></ion-icon>
+                        <h3><span class="counter">0</span>%</h3>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+
+                <!-- Right Side - Features -->
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <ion-icon name="rocket-outline"></ion-icon>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Quick Placement</h3>
+                            <p>Get placed in top companies within weeks of registration</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Verified Companies</h3>
+                            <p>All companies are verified and trusted partners</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Career Guidance</h3>
+                            <p>Get expert guidance for your career path</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Mission -->
+            <div class="about-mission">
+                <div class="mission-content">
+                    <h2>Our <span>Mission</span></h2>
+                    <p>To bridge the gap between talented students and industry-leading companies, creating meaningful internship opportunities that launch successful careers.</p>
+                    <button class="btn2 btn2-secondary">Learn More</button>
+                </div>
+                <div class="mission-image">
+                    <img src="images/mission.jpg" alt="Our Mission">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

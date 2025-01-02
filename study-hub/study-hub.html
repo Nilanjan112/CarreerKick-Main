@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub | CareerKick</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="study-hub.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    
+    <div class="study-container">
+        <!-- Left Sidebar -->
+        <nav class="study-nav">
+            <div class="nav-header">
+                <div class="logo">
+                    <a href='https://postimg.cc/hfyG19k7'>
+                        <img src='https://i.postimg.cc/hfyG19k7/Screenshot-2024-11-10-181701-removebg-preview.png' alt='Logo'/>
+                    </a>
+                </div>
+                <button class="nav-toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="profile-section">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="path/to/profile.jpg" alt="Profile">
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>John Doe</h3>
+                        <p>Student</p>
+                    </div>
+                    <button class="profile-menu-btn">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                </div>
+                <div class="profile-dropdown">
+                    <a href="#" class="dropdown-item">
+                        <ion-icon name="person-outline"></ion-icon>
+                        View Profile
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <ion-icon name="settings-outline"></ion-icon>
+                        Settings
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                        Help Center
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item logout">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                        Logout
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-sections">
+                <div class="nav-section">
+                    <h3>Main Menu</h3>
+                    <div class="nav-links">
+                        <a href="#" class="nav-link active">
+                            <ion-icon name="home-outline"></ion-icon>
+                            <span>Dashboard</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <ion-icon name="book-outline"></ion-icon>
+                            <span>My Courses</span>
+                            <span class="badge">3</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                            <span>Schedule</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <ion-icon name="library-outline"></ion-icon>
+                            <span>Resources</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>Study Tools</h3>
+                    <div class="nav-links">
+                        <a href="#" class="nav-link">
+                            <ion-icon name="pencil-outline"></ion-icon>
+                            <span>Notes</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <ion-icon name="alarm-outline"></ion-icon>
+                            <span>Pomodoro Timer</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <ion-icon name="checkbox-outline"></ion-icon>
+                            <span>Tasks</span>
+                            <span class="badge warning">5</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-footer">
+                <div class="theme-toggle">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <h1>Advanced Web Development</h1>
+                <div class="header-actions">
+                    <button class="action-btn">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        Save
+                    </button>
+                    <button class="action-btn">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        Share
+                    </button>
+                </div>
+            </header>
+
+            <!-- 3D Video Player -->
+            <section class="video-section">
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video id="lectureVideo" poster="images/thumbnail.jpg">
+                            <source src="videos/lecture.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <div class="overlay-controls">
+                                <button class="control-btn rewind">
+                                    <ion-icon name="play-back"></ion-icon>
+                                    <span>10s</span>
+                                </button>
+                                <button class="control-btn play">
+                                    <ion-icon name="play"></ion-icon>
+                                </button>
+                                <button class="control-btn forward">
+                                    <span>10s</span>
+                                    <ion-icon name="play-forward"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-controls">
+                        <div class="progress-container">
+                            <div class="timestamp current">0:00</div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                                <div class="chapter-markers"></div>
+                            </div>
+                            <div class="timestamp total">10:30</div>
+                        </div>
+                        <div class="controls-row">
+                            <div class="left-controls">
+                                <button class="control-btn play-pause">
+                                    <ion-icon name="play"></ion-icon>
+                                </button>
+                                <div class="volume-control">
+                                    <ion-icon name="volume-high"></ion-icon>
+                                    <input type="range" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                            <div class="center-controls">
+                                <button class="speed-btn" data-speed="0.5">0.5x</button>
+                                <button class="speed-btn active" data-speed="1">1x</button>
+                                <button class="speed-btn" data-speed="1.5">1.5x</button>
+                                <button class="speed-btn" data-speed="2">2x</button>
+                            </div>
+                            <div class="right-controls">
+                                <button class="control-btn quality">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                    <span>1080p</span>
+                                </button>
+                                <button class="control-btn fullscreen">
+                                    <ion-icon name="expand"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notes Section -->
+            <section class="notes-section">
+                <div class="notes-container">
+                    <div class="notes-header">
+                        <h2>Study Notes</h2>
+                        <div class="notes-actions">
+                            <button class="action-btn share">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                                Share Notes
+                            </button>
+                            <button class="action-btn save">
+                                <ion-icon name="save-outline"></ion-icon>
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                    <div class="notes-editor">
+                        <div class="editor-toolbar">
+                            <div class="toolbar-group">
+                                <button data-command="bold">
+                                    <ion-icon name="bold"></ion-icon>
+                                </button>
+                                <button data-command="italic">
+                                    <ion-icon name="italic"></ion-icon>
+                                </button>
+                                <button data-command="underline">
+                                    <ion-icon name="text"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="toolbar-group">
+                                <button data-command="insertOrderedList">
+                                    <ion-icon name="list"></ion-icon>
+                                </button>
+                                <button data-command="insertUnorderedList">
+                                    <ion-icon name="list-circle"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="toolbar-group">
+                                <button data-command="createLink">
+                                    <ion-icon name="link"></ion-icon>
+                                </button>
+                                <button data-command="insertImage">
+                                    <ion-icon name="image"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="editor-content" contenteditable="true">
+                            <h3>Lecture Notes:</h3>
+                            <p>Start taking notes here...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+       <!-- Update the resources-sidebar section in study-hub.html -->
+<aside class="resources-sidebar">
+    <div class="resources-header">
+        <h3>Study Resources</h3>
+        <div class="view-controls">
+            <button class="view-btn active" data-view="grid">
+                <ion-icon name="grid-outline"></ion-icon>
+            </button>
+            <button class="view-btn" data-view="list">
+                <ion-icon name="list-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="search-bar-container">
+        <div class="advanced-search">
+            <div class="search-input-group">
+                <ion-icon name="search-outline"></ion-icon>
+                <input 
+                    type="text" 
+                    placeholder="Search resources..." 
+                    id="resourceSearch"
+                >
+                <div class="search-actions">
+                    <button class="filter-toggle" title="Advanced Filters">
+                        <ion-icon name="options-outline"></ion-icon>
+                    </button>
+                    <button class="search-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                        Search
+                    </button>
+                </div>
+            </div>
+            
+            <div class="advanced-filters">
+                <div class="filter-groups">
+                    <div class="filter-group">
+                        <label>Resource Type</label>
+                        <select id="resourceType">
+                            <option value="">All Types</option>
+                            <option value="pdf">PDF Documents</option>
+                            <option value="video">Video Tutorials</option>
+                            <option value="code">Code Samples</option>
+                            <option value="quiz">Quizzes</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sort By</label>
+                        <select id="sortBy">
+                            <option value="relevance">Relevance</option>
+                            <option value="date">Date Added</option>
+                            <option value="popularity">Popularity</option>
+                            <option value="rating">Rating</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Difficulty Level</label>
+                        <select id="difficulty">
+                            <option value="">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="search-suggestions">
+            <!-- Suggestions will be dynamically populated -->
+        </div>
+    </div>
+
+    <div class="resources-filters">
+        <div class="filter-tags">
+            <span class="filter-tag active" data-type="all">All</span>
+            <span class="filter-tag" data-type="pdf">PDFs</span>
+            <span class="filter-tag" data-type="video">Videos</span>
+            <span class="filter-tag" data-type="code">Code</span>
+            <span class="filter-tag" data-type="quiz">Quizzes</span>
+        </div>
+    </div>
+
+    <div class="resources-content">
+        <!-- Resource Overview -->
+        <div class="resource-overview">
+            <div class="resource-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <ion-icon name="library-outline"></ion-icon>
+                    </div>
+                    <div class="stat-value" data-count="42">42</div>
+                    <div class="stat-label">Available Resources</div>
+                    <div class="stat-trend up">
+                        <ion-icon name="trending-up-outline"></ion-icon>
+                        <span>+5 this week</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div class="stat-value" data-count="15">15</div>
+                    <div class="stat-label">Completed</div>
+                    <div class="stat-progress">
+                        <div class="progress-ring">
+                            <svg>
+                                <circle class="progress-ring-circle" cx="20" cy="20" r="18"></circle>
+                            </svg>
+                            <span>35%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <div class="stat-value">85%</div>
+                    <div class="stat-label">Average Score</div>
+                    <div class="stat-trend up">
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                        <span>+2.5%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Path Progress -->
+            <div class="learning-path">
+                <h3>Your Learning Path</h3>
+                <div class="path-progress">
+                    <div class="milestone completed">
+                        <div class="milestone-icon">
+                            <ion-icon name="code-outline"></ion-icon>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>HTML & CSS Basics</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="milestone active">
+                        <div class="milestone-icon">
+                            <ion-icon name="logo-javascript"></ion-icon>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>JavaScript Fundamentals</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-icon">
+                            <ion-icon name="logo-react"></ion-icon>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>React Development</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resource Categories -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3>Browse by Category</h3>
+                <button class="view-all">View All</button>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                    </div>
+                    <h4>Programming</h4>
+                    <p>125 resources</p>
+                    <div class="category-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%"></div>
+                        </div>
+                        <span>45% completed</span>
+                    </div>
+                </div>
+                <!-- Add more category cards -->
+            </div>
+        </div>
+
+        <!-- Featured Resources -->
+        
+                <!-- Add more resource cards -->
+            
+    </div>
+</aside>
+    </div>
+
+    <script src="study-hub.js"></script>
+</body>
+</html>

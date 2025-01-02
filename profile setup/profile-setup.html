@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Profile | CareerKick</title>
+    <link rel="stylesheet" href="profile-setup.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="setup-container">
+        <div class="setup-card">
+            <div class="setup-header">
+                <h2>Complete Your Profile</h2>
+                <p>Help us personalize your experience</p>
+            </div>
+
+            <form id="profileSetupForm" class="setup-form">
+                <div class="profile-pic-upload">
+                    <div class="profile-pic-3d">
+                        <div class="pic-container" id="profilePicPreview">
+                            <div class="pic-overlay"></div>
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                        <div class="pic-ring"></div>
+                    </div>
+                    <button type="button" class="upload-btn">
+                        <div class="btn-content">
+                            <ion-icon name="camera-outline"></ion-icon>
+                            <span>Upload Photo</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <input type="file" id="profilePic" hidden accept="image/*">
+                </div>
+
+                <div class="setup-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step active">
+                            <div class="step-number">1</div>
+                            <span>Basic Info</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <span>Professional</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <span>Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Professional Title</label>
+                            <input type="text" id="title" placeholder="e.g. Web Developer">
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" id="location" placeholder="City, Country">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Bio</label>
+                            <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Professional Details</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Experience Level</label>
+                            <select id="experience">
+                                <option value="">Select Level</option>
+                                <option value="student">Student</option>
+                                <option value="entry">Entry Level</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="expert">Expert</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Looking For</label>
+                            <select id="jobType">
+                                <option value="">Select Type</option>
+                                <option value="internship">Internship</option>
+                                <option value="fulltime">Full Time</option>
+                                <option value="parttime">Part Time</option>
+                                <option value="freelance">Freelance</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Skills</h3>
+                    <div class="skills-input">
+                        <div class="skills-tags" id="skillsTags"></div>
+                        <input type="text" id="skillInput" placeholder="Add skills (press Enter)">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="skip-btn">Skip for Now</button>
+                    <button type="submit" class="complete-btn">
+                        <span>Complete Setup</span>
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="profile-setup.js"></script>
+</body>
+</html> 
